@@ -1,0 +1,16 @@
+.idea
+.idea*
+.idea/*
+.DS_Store
+*.DS_Store
+.terraform
+.terraform*
+.terraform/*
+*terraform.tfstate.d*
+iam/terraform.tfstate.d*
+terraform.tfstate.d
+terraform.tfstate.d/*
+graph.svg
+
+# For Visual Studio Code
+.vscode

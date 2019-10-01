@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Allow access to this bucket for all admin users",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::151078733856:user/vlad",
+                    "arn:aws:iam::632062313401:user/vlad"
+                ]
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3:PutObject*",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::maplebird-tfstate",
+                "arn:aws:s3:::maplebird-tfstate/*"
+            ]
+        }
+    ]
+}
