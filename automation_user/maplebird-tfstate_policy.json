@@ -7,7 +7,12 @@
             "Principal": {
                 "AWS": [
                     "arn:aws:iam::151078733856:user/vlad",
-                    "arn:aws:iam::632062313401:user/vlad"
+                    "arn:aws:iam::632062313401:user/vlad",
+                    "arn:aws:iam::151078733856:user/tf-automation-user",
+                    "arn:aws:iam::151078733856:role/tf-automation-user-role",
+                    "arn:aws:iam::632062313401:role/tf-automation-user-role",
+                    "arn:aws:iam::151078733856:root",
+                    "arn:aws:iam::632062313401:root"
                 ]
             },
             "Action": [

@@ -170,7 +170,6 @@ data "aws_iam_policy_document" "limited_role_policy_document" {
     actions = [
       "${var.readonly_actions}",
       "${var.limited_actions}",
-      "${var.extra_allowed_actions_by_env[local.apn_env_name]}",
     ]
 
     resources = [

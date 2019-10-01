@@ -32,13 +32,6 @@ resource "aws_iam_policy" "dev_privileged_group_role_assumption_policy" {
 
 # Admin users
 
-resource "aws_iam_policy" "fast_team_role_assumption_policy" {
-  count  = "${local.apn_env_name == "maplebird" ? 1 : 0 }"
-  name   = "tf-fast-team-role-assumption-policy"
-  path   = "/"
-  policy = "${data.aws_iam_policy_document.fast_team_role_assumption_policy_document.json}"
-}
-
 resource "aws_iam_policy" "admin_group_role_assumption_policy" {
   count  = "${local.apn_env_name == "maplebird" ? 1 : 0 }"
   name   = "tf-admin-group-role-assumption-policy"
