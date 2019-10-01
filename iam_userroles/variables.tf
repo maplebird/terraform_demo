@@ -31,7 +31,7 @@ locals {
 
 variable "maplebird_account_id" {
   type    = "string"
-  default = "178452673432"
+  default = "151078733856"
 }
 
 variable "maplebird_corp_account_id" {

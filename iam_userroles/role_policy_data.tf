@@ -113,13 +113,8 @@ data "aws_iam_policy_document" "restricted_admin_role_policy_document" {
 
     resources = [
       // Only care about prod buckets
-      "arn:aws:s3:::prod-appneta-pcap",
-
-      "arn:aws:s3:::prod-appneta-pcap/*",
-      "arn:aws:s3:::prod-flow-backups",
-      "arn:aws:s3:::prod-flow-backups/*",
-      "arn:aws:s3:::prod-appneta-avhar",
-      "arn:aws:s3:::prod-appneta-avhar/*",
+      "arn:aws:s3:::prod-*",
+      "arn:aws:s3:::prod-*/*",
     ]
   }
 
